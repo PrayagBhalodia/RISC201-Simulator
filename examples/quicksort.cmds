@@ -1,0 +1,7 @@
+pipe 4
+mem 0xF4 10
+run
+stats
+reg
+mem 0xF4 10
+quit

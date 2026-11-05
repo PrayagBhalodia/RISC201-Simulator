@@ -1,0 +1,115 @@
+  Loaded 19 word(s) (14 code) from examples/multiply_divide.hex
+
+    ____  _________ ______   ___   ____ ___ 
+   / __ \/  _/ ___// ____/  |__ \ / __ <  / 
+  / /_/ // / \__ \/ /       __/ // / / / /  
+ / _, _// / ___/ / /___    / __// /_/ / /   
+/_/ |_/___//____/\____/   /____/\____/_/    
+
+  RISC201 Simulator  |  Interactive CLI Debugger
+  Type 'help' for available commands.
+
+  4-stage pipeline: IF, DE/OF, EX/MEM, WB
+  MDU: multiply booth, divide non-restoring; static predict-not-taken.
+--------------------------------------------------------------
+  Pipeline
+--------------------------------------------------------------
+  Clock cycles      : 207
+  Instructions      : 14
+  MDU stalls        : 189
+  FPU stalls        : 0
+  Load-use stalls   : 0
+  Branch-op stalls  : 0
+  Squashed (bubbles): 0
+--------------------------------------------------------------
+pipeline=4
+mul_algo=booth
+div_algo=non-restoring
+cycles=207
+instructions=14
+mdu_stalls=189
+fpu_stalls=0
+load_use_stalls=0
+branch_stalls=0
+squashed=0
+mdu_adder_ops=133
+error=none
+  CPU state reset. Memory unchanged.
+  4-stage pipeline: IF, DE/OF, EX/MEM, WB
+  MDU: multiply shift-and-add, divide non-restoring; static predict-not-taken.
+--------------------------------------------------------------
+  Pipeline
+--------------------------------------------------------------
+  Clock cycles      : 207
+  Instructions      : 14
+  MDU stalls        : 189
+  FPU stalls        : 0
+  Load-use stalls   : 0
+  Branch-op stalls  : 0
+  Squashed (bubbles): 0
+--------------------------------------------------------------
+pipeline=4
+mul_algo=shift-and-add
+div_algo=non-restoring
+cycles=207
+instructions=14
+mdu_stalls=189
+fpu_stalls=0
+load_use_stalls=0
+branch_stalls=0
+squashed=0
+mdu_adder_ops=146
+error=none
+  CPU state reset. Memory unchanged.
+  4-stage pipeline: IF, DE/OF, EX/MEM, WB
+  MDU: multiply booth, divide restoring; static predict-not-taken.
+--------------------------------------------------------------
+  Pipeline
+--------------------------------------------------------------
+  Clock cycles      : 282
+  Instructions      : 14
+  MDU stalls        : 264
+  FPU stalls        : 0
+  Load-use stalls   : 0
+  Branch-op stalls  : 0
+  Squashed (bubbles): 0
+--------------------------------------------------------------
+pipeline=4
+mul_algo=booth
+div_algo=restoring
+cycles=282
+instructions=14
+mdu_stalls=264
+fpu_stalls=0
+load_use_stalls=0
+branch_stalls=0
+squashed=0
+mdu_adder_ops=209
+error=none
+  CPU state reset. Memory unchanged.
+  4-stage pipeline: IF, DE/OF, EX/MEM, WB
+  MDU: multiply shift-and-add, divide restoring; static predict-not-taken.
+--------------------------------------------------------------
+  Pipeline
+--------------------------------------------------------------
+  Clock cycles      : 282
+  Instructions      : 14
+  MDU stalls        : 264
+  FPU stalls        : 0
+  Load-use stalls   : 0
+  Branch-op stalls  : 0
+  Squashed (bubbles): 0
+--------------------------------------------------------------
+pipeline=4
+mul_algo=shift-and-add
+div_algo=restoring
+cycles=282
+instructions=14
+mdu_stalls=264
+fpu_stalls=0
+load_use_stalls=0
+branch_stalls=0
+squashed=0
+mdu_adder_ops=222
+error=none
+  Goodbye.

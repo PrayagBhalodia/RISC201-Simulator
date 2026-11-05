@@ -1,0 +1,54 @@
+  Loaded 6 word(s) (6 code) from examples/addition.hex
+
+    ____  _________ ______   ___   ____ ___ 
+   / __ \/  _/ ___// ____/  |__ \ / __ <  / 
+  / /_/ // / \__ \/ /       __/ // / / / /  
+ / _, _// / ___/ / /___    / __// /_/ / /   
+/_/ |_/___//____/\____/   /____/\____/_/    
+
+  RISC201 Simulator  |  Interactive CLI Debugger
+  Type 'help' for available commands.
+
+  4-stage pipeline: IF, DE/OF, EX/MEM, WB
+  MDU: multiply booth, divide non-restoring; static predict-not-taken.
+--------------------------------------------------------------
+  Pipeline
+--------------------------------------------------------------
+  Clock cycles      : 10
+  Instructions      : 6
+  MDU stalls        : 0
+  FPU stalls        : 0
+  Load-use stalls   : 0
+  Branch-op stalls  : 0
+  Squashed (bubbles): 0
+--------------------------------------------------------------
+pipeline=4
+mul_algo=booth
+div_algo=non-restoring
+cycles=10
+instructions=6
+mdu_stalls=0
+fpu_stalls=0
+load_use_stalls=0
+branch_stalls=0
+squashed=0
+mdu_adder_ops=0
+error=none
+--------------------------------------------------------------
+  Registers
+--------------------------------------------------------------
+  R0  (zero) = 0x00000000     R1         = 0x00000011     R2         = 0x00000019     R3         = 0x0000002A
+  R4         = 0x00000008     R5         = 0x00000000     R6         = 0x00000054     R7         = 0x00000000
+  R8         = 0x00000000     R9         = 0x00000000     R10        = 0x00000000     R11        = 0x00000000
+  R12        = 0x00000000     R13        = 0x00000000     R14        = 0x00000000     R15        = 0x00000000
+--------------------------------------------------------------
+  PC = 0x00000018  SP = 0x00010000  LR = 0x00000000
+--------------------------------------------------------------
+--------------------------------------------------------------
+  Stack
+--------------------------------------------------------------
+  base 0x00010000   SP 0x00010000   limit 0x00000018  (program image end)
+  0 word(s) in use, 0 frame(s), 65512 byte(s) before overflow
+  (empty - nothing has been pushed)
+--------------------------------------------------------------
+  Goodbye.

@@ -1,0 +1,54 @@
+  Loaded 89 word(s) (86 code) from examples/bit_reverse.hex
+
+    ____  _________ ______   ___   ____ ___ 
+   / __ \/  _/ ___// ____/  |__ \ / __ <  / 
+  / /_/ // / \__ \/ /       __/ // / / / /  
+ / _, _// / ___/ / /___    / __// /_/ / /   
+/_/ |_/___//____/\____/   /____/\____/_/    
+
+  RISC201 Simulator  |  Interactive CLI Debugger
+  Type 'help' for available commands.
+
+  4-stage pipeline: IF, DE/OF, EX/MEM, WB
+  MDU: multiply booth, divide non-restoring; static predict-not-taken.
+--------------------------------------------------------------
+  Pipeline
+--------------------------------------------------------------
+  Clock cycles      : 10860
+  Instructions      : 8550
+  MDU stalls        : 0
+  FPU stalls        : 0
+  Load-use stalls   : 0
+  Branch-op stalls  : 1088
+  Squashed (bubbles): 1186
+--------------------------------------------------------------
+pipeline=4
+mul_algo=booth
+div_algo=non-restoring
+cycles=10860
+instructions=8550
+mdu_stalls=0
+fpu_stalls=0
+load_use_stalls=0
+branch_stalls=1088
+squashed=1186
+mdu_adder_ops=0
+error=none
+--------------------------------------------------------------
+  Registers
+--------------------------------------------------------------
+  R0  (zero) = 0x00000000     R1         = 0x80000000     R2         = 0x00000001     R3         = 0x0000FFFF
+  R4         = 0x00000010     R5         = 0x00000001     R6         = 0x00000000     R7         = 0x00000001
+  R8         = 0x00000001     R9         = 0x00000000     R10        = 0x1E6A2C48     R11        = 0x1E6A2C48
+  R12        = 0x00000001     R13        = 0x00000000     R14        = 0x00000000     R15        = 0x00000000
+--------------------------------------------------------------
+  PC = 0x00000158  SP = 0x00010000  LR = 0x00000040
+--------------------------------------------------------------
+--------------------------------------------------------------
+  Stack
+--------------------------------------------------------------
+  base 0x00010000   SP 0x00010000   limit 0x00000164  (program image end)
+  0 word(s) in use, 0 frame(s), 65180 byte(s) before overflow
+  (empty - nothing has been pushed)
+--------------------------------------------------------------
+  Goodbye.

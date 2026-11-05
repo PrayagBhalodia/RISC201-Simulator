@@ -1,0 +1,6 @@
+line 2: macro 'ADD' would hide an instruction of the same name
+line 10: macro 'GOOD' is defined more than once
+line 19: macro 'GOOD' takes 1 operand(s) but got 2
+line 7: '\B' is not a parameter of this macro
+line 21 (LOOPS, macro line 15): macro 'LOOPS' is nested more than 32 deep
+line 22: .ENDM without a matching .MACRO

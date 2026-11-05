@@ -1,0 +1,33 @@
+# RISC201 sample hex program
+# Demo for Phase 1 CLI evaluation
+#
+# Program: compute R1=3, R2=4, R3=R1+R2=7
+#
+# Opcode table reference (29 instructions, 0x1D-0x3F illegal):
+#   NOP=0x00 ADD=0x01 SUB=0x02 MUL=0x03 DIV=0x04 MOD=0x05
+#   AND=0x06 OR=0x07 XOR=0x08 NOT=0x09 SHL=0x0A SRL=0x0B SRA=0x0C
+#   ADDI=0x0D SUBI=0x0E MULI=0x0F DIVI=0x10 MODI=0x11
+#   LD=0x12 ST=0x13 MOV=0x14 MOVHI=0x15 PUSH=0x16 POP=0x17
+#   CALL=0x18 RET=0x19 B=0x1A BEQ=0x1B BGT=0x1C
+#
+# Format I (ADDI):  [31:26]=opcode [25:22]=rd [21:18]=rs1 [17:0]=imm18
+#   ADDI R1,R0,#3  = 001101 | 0001 | 0000 | 000000000000000011
+#                  = 0011 0100 0100 0000 0000 0000 0000 0011
+#                  = 0x34400003
+#
+#   ADDI R2,R0,#4  = 001101 | 0010 | 0000 | 000000000000000100
+#                  = 0011 0100 1000 0000 0000 0000 0000 0100
+#                  = 0x34800004
+#
+# Format R (ADD):   [31:26]=opcode [25:22]=rd [21:18]=rs1 [17:14]=rs2 [13:0]=unused
+#   ADD R3,R1,R2   = 000001 | 0011 | 0001 | 0010 | 00...0
+#                  = 0000 0100 1100 0100 1000 0000 0000 0000
+#                  = 0x04C48000
+#
+# There is no halt instruction: the program ends when the PC walks past the
+# last word of code.
+; code 3
+
+34400003
+34800004
+04C48000

@@ -1,0 +1,16 @@
+pipe 4 booth non-restoring
+run
+stats
+reset
+pipe 4 shift-and-add non-restoring
+run
+stats
+reset
+pipe 4 booth restoring
+run
+stats
+reset
+pipe 4 shift-and-add restoring
+run
+stats
+quit
